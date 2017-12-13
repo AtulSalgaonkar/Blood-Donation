@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserHome.master.cs" Inherits="UserLogin_UserHome" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>User Acount</title>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../HMenuDD.css" rel="Stylesheet" type="text/css">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style2
+        {
+            width: 100%;
+        }
+        .style1
+        {
+            width: 98%;
+        }
+        .style3
+        {
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table align="center" style="height: 216px; width: 1225px">
+            <tr>
+                <td>
+                    <asp:Image ID="Image1" runat="server" Height="137px" 
+                        ImageUrl="~/24541025-Give-blood-blood-bag-and-drop-of-blood-Stock-Vector-donation.jpg" 
+                        Width="179px" />
+                </td>
+                <td>
+                    <a href=UserHome.aspx><asp:Image ID="Image2" runat="server" Height="114px" Width="580px" 
+                        ImageUrl="~/Home/Logo.jpg" /></a>
+                </td>
+                <td>
+                    <asp:Image ID="Image3" runat="server" Height="128px" 
+                        ImageUrl="~/31253810-personaje-de-dibujos-animados-de-la-gota-de-sangre-con-pesas.jpg" 
+                        Width="158px" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center">
+                    <div class="HMenuDD">
+                        <ul style="background-color: #000000">
+                            <li><a href="UserHome.aspx">Home</a></li>
+                            <li><a href="Blood_Donated_Status_Form.aspx">Blood Donation Status Form</a></li>
+                            <li><a href="UserRequestForBlood.aspx">Request For Blood</a></li>
+                            <li><a href="Find_Organization.aspx">Find Organization</a></li>
+                            <li><a href="EditP.aspx">Edit User Profile</a></li>
+                            <li><a>Status</a>
+                                <ul>
+                                    <li><a href="User_Status_Of_Blood_Donation.aspx">Status of Blood Donation</a></li>
+                                    <li><a href="Blood_Request_Status.aspx">Status of Blood Request</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../Home/Home.aspx">
+                                <asp:LinkButton ID="LinkButton11" runat="server" onclick="LinkButton11_Click">Logout</asp:LinkButton>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <br />
+                    <hr />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center">
+                    <table class="style2">
+                        <tr>
+                            <td>
+                                
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                    <asp:Panel ID="Panel3" runat="server">
+                                    </asp:Panel>
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <hr />
+                </td>
+            </tr>
+        </table>
+        <table align="center" class="style1">
+            <tr>
+                <td class="style3" style="background-color: #000000; color: #666666;">
+                    &nbsp;<asp:LinkButton ID="LinkButton6" runat="server" Font-Bold="True" 
+                        Font-Overline="False" Font-Size="Small" ForeColor="#666666" Height="15px" 
+                        PostBackUrl="~/UserLogin/Privacy_Policy_User.aspx">Privacy Policy</asp:LinkButton>
+&nbsp;|
+                    <asp:LinkButton ID="LinkButton10" runat="server" Font-Bold="True" 
+                        Font-Overline="False" Font-Size="Small" ForeColor="#666666" Height="15px" 
+                        PostBackUrl="~/UserLogin/UserHome.aspx">IndianBloodDonation.com</asp:LinkButton>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© 2017 IndianBloodDonation.com</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+
+
+
+
+
+
+
+

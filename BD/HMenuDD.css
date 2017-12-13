@@ -1,0 +1,51 @@
+﻿.HMenuDD
+{
+    margin:auto;
+    }
+.HMenuDD ul
+{
+    padding:0px;
+    margin:0px;
+    height: 46px;
+    }
+.HMenuDD ul li
+{
+    width:150px;
+    float:left;
+    display:inline-block;
+    text-align:center;
+    cursor:pointer;
+    background-color:Black;
+    height:40px;
+}
+.HMenuDD ul li a
+{
+    font-family:Calibri;
+    font-size:15px;
+    color:#FF666A;
+    text-decoration:none;
+    display:block;
+    width: 150px;
+}
+.HMenuDD ul li a:hover
+{
+    background-color:#FF666A;
+    color:Black;
+}
+.HMenuDD ul li ul
+{
+    display:none;
+}
+.HMenuDD ul li:hover ul
+{
+    display:block;
+}
+.HMenuDD ul li ul li
+{
+    text-align:left;
+}
+.HMenuDD ul li ul li a:hover
+{
+    background-color:#FF9598;
+    color:Black;
+}

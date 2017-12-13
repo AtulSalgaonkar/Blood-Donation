@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HomeMaster.master.cs" Inherits="HomeMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>IndianBloodDonation</title>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../HMenuDD.css" rel="Stylesheet" type="text/css">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 98%;
+        }
+        .style2
+        {
+            width: 100%;
+        }
+        .style3
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table align="center" style="height: 216px; width: 1303px" 
+            class="table-responsive">
+            <tr>
+                <td>
+                    <asp:ImageButton ID="ImageButton1" runat="server" Height="137px" 
+                        ImageUrl="~/24541025-Give-blood-blood-bag-and-drop-of-blood-Stock-Vector-donation.jpg" 
+                        Width="179px" />
+                </td>
+                <td>
+                    <a><asp:Image ID="Image2" runat="server" Height="114px" Width="580px" 
+                        ImageUrl="~/Home/Logo.jpg" /></a>
+                </td>
+                <td>
+                    <asp:Image ID="Image3" runat="server" Height="128px" 
+                        ImageUrl="~/31253810-personaje-de-dibujos-animados-de-la-gota-de-sangre-con-pesas.jpg" 
+                        Width="158px" />
+
+                
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center">
+                    <div class="HMenuDD">
+                        <ul style="background-color: #000000">
+                            <li><a>
+                                <asp:LinkButton ID="LinkButton8" runat="server" PostBackUrl="~/Home/Home.aspx">Home</asp:LinkButton></a></li>
+                            <li><a>
+                                <asp:LinkButton ID="LinkButton7" runat="server" 
+                                    PostBackUrl="~/Registration.aspx">Sign Up</asp:LinkButton></a></li>
+                            <li><a><asp:LinkButton ID="LinkButton1" runat="server" 
+                                    PostBackUrl="~/Home/Learn_About_Blood.aspx">Learn About Blood</asp:LinkButton></a></li>
+                            <li><a>
+                                <asp:LinkButton ID="LinkButton2" runat="server" 
+                                    PostBackUrl="~/Home/Why_Donate_Blood.aspx">Why Donate Blood?</asp:LinkButton></a></li>
+                            <li><a>
+                                <asp:LinkButton ID="LinkButton3" runat="server" 
+                                    PostBackUrl="~/Home/Who_Can_D_Blood.aspx">Who can donate Blood?</asp:LinkButton></a></li>
+                            <li><a>
+                                <asp:LinkButton ID="LinkButton4" runat="server" 
+                                    PostBackUrl="~/Find_Organization2.aspx">Find Organizatoion</asp:LinkButton></a></li>
+                            <li><a>
+                                <asp:LinkButton ID="LinkButton5" runat="server" 
+                                    PostBackUrl="~/LoginM/MainLoginP.aspx">Sign In</asp:LinkButton></a></li>
+                        </ul>
+                    </div>
+&nbsp;<hr />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center">
+                    <table class="style2">
+                        <tr>
+                            <td>
+                                
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                    <asp:Panel ID="Panel3" runat="server">
+                                    </asp:Panel>
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <hr />
+                </td>
+            </tr>
+        </table>
+        <table align="center" class="style1">
+            <tr>
+                <td class="style3" style="background-color: #000000; color: #666666;">
+                    &nbsp;<asp:LinkButton ID="LinkButton6" runat="server" Font-Bold="True" 
+                        Font-Overline="False" Font-Size="Small" ForeColor="#666666" Height="15px" 
+                        PostBackUrl="~/Home/privacy_policy.aspx">Privacy Policy</asp:LinkButton>
+&nbsp;|
+                    <asp:LinkButton ID="LinkButton10" runat="server" Font-Bold="True" 
+                        Font-Overline="False" Font-Size="Small" ForeColor="#666666" Height="15px" 
+                        PostBackUrl="~/Home/Home.aspx">IndianBloodDonation.com</asp:LinkButton>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; © 2017 IndianBloodDonation.com</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+
+</html>
